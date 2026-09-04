@@ -11,6 +11,7 @@
             padding: 0;
             width: 100%;
             height: 100%;
+            overflow: hidden;
         }
 
         .page {
@@ -20,6 +21,8 @@
         }
 
         iframe {
+            position: absolute;
+            inset: 0;
             width: 100%;
             height: 100%;
             border: none;
@@ -27,32 +30,27 @@
 
         .black-box {
             position: absolute;
-
-            /* rectangle ki position */
-            top: 20px;
-            left: 20px;
-
-            /* rectangle ka size */
+            top: 50px;
+            left: 50px;
             width: 161px;
             height: 28px;
-
-            background: black;
-            z-index: 10;
+            background: #000;
+            z-index: 999999;
         }
     </style>
 </head>
 
 <body>
 
-<div class="page">
+    <div class="page">
 
-    <iframe
-        src="https://whoer.com">
-    </iframe>
+        <iframe
+            src="https://a.com/YOUR-SPECIFIC-PAGE">
+        </iframe>
 
-    <div class="black-box"></div>
+        <div class="black-box"></div>
 
-</div>
+    </div>
 
 </body>
 </html>
