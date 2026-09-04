@@ -20,64 +20,22 @@
             overflow: hidden;
         }
 
-        body {
-            background: #ffffff;
-        }
-
-        .frame-wrapper {
-            width: 100%;
-            height: 100vh;
-            height: 100dvh;
-            overflow: hidden;
-        }
-
         iframe {
             display: block;
             width: 100%;
-            height: 100%;
+            height: 100vh;
             border: 0;
-            margin: 0;
-            padding: 0;
-        }
-
-        .error {
-            display: none;
-            padding: 20px;
-            font-family: Arial, sans-serif;
-            text-align: center;
         }
     </style>
 </head>
 
 <body>
 
-    <div class="frame-wrapper">
-        <iframe
-            id="siteFrame"
-            src="https://whoer.com/blog/"
-            title="Embedded website"
-            allow="fullscreen; autoplay; clipboard-read; clipboard-write"
-            referrerpolicy="strict-origin-when-cross-origin">
-        </iframe>
-    </div>
-
-    <div class="error" id="errorMessage">
-        The embedded website could not be displayed.
-    </div>
-
-    <script>
-        const frame = document.getElementById("siteFrame");
-        const errorMessage = document.getElementById("errorMessage");
-
-        frame.addEventListener("load", function () {
-            console.log("Embedded page loaded.");
-        });
-
-        frame.addEventListener("error", function () {
-            frame.style.display = "none";
-            errorMessage.style.display = "block";
-        });
-    </script>
+    <!-- Yahan a.com ka exact page URL lagao -->
+    <iframe
+        src="https://whoer.com"
+        title="Embedded Website">
+    </iframe>
 
 </body>
 </html>
